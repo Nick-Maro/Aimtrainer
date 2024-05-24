@@ -1,0 +1,351 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-color: #000235;
+}
+
+
+#container{
+    width: 100%;
+    height: 3000px;
+    background-color: RGB(217, 230, 199);
+    margin-top: 100px;
+    
+}
+
+#game{
+    position: absolute;
+    width: 1700px;
+    height: 700px; 
+    background-color: rgb(0, 0, 0);
+    border: 10px solid;
+    border-color: rgba(146, 60, 2, 0.726);
+    margin-left: 100px;
+    margin-top:100px;
+    position: absolute;
+    top: 50px;   
+     
+}
+#restart{
+    
+    display: inline-block;
+    padding: 30px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    left:50%;
+    position:absolute;
+    margin-top:750px;
+}
+
+@keyframes scaleAnimation {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.target{
+    width:100px;
+    height: 100px;
+    position:absolute;
+    background-color: rgb(240, 57, 44);
+    
+    border-radius: 50%;
+    cursor:pointer;
+    animation: scaleAnimation 2s ease-in-out infinite; 
+}
+    
+
+
+.target::before {
+    content: "";
+    width: 10px; 
+    height: 10px; 
+    background-color: #fff; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+     
+}
+
+
+.invisible-target {
+    display: none;
+}
+
+#score{
+    --game-top: 50px;
+    position:absolute;
+    font-family: sans-serif;
+    font-size: 26px;
+    margin-top: 110px;
+    left:100px;   
+    color:wheat;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+  }
+
+
+
+
+.Frame1{
+    width: 480px; height: 480px; left: 1200px; top: 301px; position: absolute
+}  
+#triangolo1 {
+    width: 162px;
+    height: 162px;
+    left: 200px;
+    top: 179px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    rotate: 90deg;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 86.6px solid #341111;
+    flex-shrink: 0;
+    
+  }
+
+#cerchio1 {
+    width: 391px;
+    height: 391px;
+    left: 44.85px;
+    top: 44px;
+    position: absolute;
+    background: #FF0000;
+    border-radius: 9999px;
+}
+
+#cerchio2 {
+    width: 162px;
+    height: 162px;
+    left: 159.62px;
+    top: 149.25px;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 9999px;
+}
+
+.Play {
+    width: 262px;
+    height: 70px;
+    left: 114.81px;
+    top: 66.15px;
+    position: absolute;
+    text-align: center;
+    color: #2F5997;
+    font-size: 64px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+
+#cerchio3{
+    width: 723px;
+     height: 587px;
+      left: 466px;
+       top: -315px;
+       position: absolute; 
+       background: #C51010;
+        box-shadow: 300px 300px 300px;
+         border-radius: 9999px; 
+         filter: blur(300px)
+}
+
+#cerchio4{width: 723px; 
+    height: 575px;
+     left: -157px; 
+     top: 628px;
+      position: absolute; 
+      background: #D9D9D9;
+       box-shadow: 200px 200px 200px;
+        border-radius: 9999px;
+        filter: blur(200px)
+}
+
+#cerchio5{
+    width: 700px;
+     height: 480px;
+      left: 328px; 
+      top: 301px;
+       position: absolute;
+        background: #F1E368;
+         box-shadow: 300px 300px 300px; 
+         border-radius: 9999px; 
+         filter: blur(300px)
+}
+
+.Line1 {
+    width: 100%;
+    height: 1px;
+    left: -4.50px;
+    top: 103.50px;
+    position: absolute;
+    border: 5px #645E7A solid;
+}
+
+.ProductPage{
+    width: 100%;
+     height: 1024px;
+      position: relative;
+       background: linear-gradient(0deg, #000235 0%, #000235 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+
+
+
+
+    
+}
+
+.Navigation {
+    width: 100%;
+    height: 112px;
+    position: absolute;
+    background-color: #1e1e1e;
+    
+}
+
+.Home {
+    left: 96px;
+    top: 41px;
+    position: absolute;
+    color: #426B1F;
+    font-size: 32px;
+    font-family: Newsreader;
+    font-weight: 500;
+    line-height: 32px;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+
+.Contact {
+    left: 1479px;
+    top: 45.50px;
+    position: absolute;
+    text-align: center;
+    color: #426B1F;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20.80px;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.Stats {
+    left: 1620px;
+    top: 45.50px;
+    position: absolute;
+    text-align: center;
+    color: #426B1F;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20.80px;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+    #Containeroptions {
+      padding-top: 13.50px;
+      padding-bottom: 13.50px;
+      padding-left: 34px;
+      padding-right: 33px;
+      left: 1800px;
+      top: 32px;
+      width: 100px;
+      position: absolute;
+      background: #426B1F;
+      border-radius: 4px;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+      cursor: pointer;
+    }
+
+    .Options {
+      text-align: center;
+      color: #C7D3BC;
+      font-size: 16px;
+      font-family: Inter;
+      font-weight: 600;
+      line-height: 20.80px;
+      word-wrap: break-word;
+      cursor: pointer;
+    }
+
+   
+    #toggleCheckbox {
+      display: none;
+    }
+
+    /* il sibling */
+    #toggleCheckbox + label {
+        background: #426B1F;
+        color: #C7D3BC;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+    #dropdownMenu {
+        width: 125px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 1800px;
+        background: #426B1F;
+        border: 1px solid #294d09;
+        border-radius: 4px;
+        
+      }
+  
+    
+      .dropdownItem {
+        padding: 8px;
+        cursor: pointer;
+        margin:2%;
+        font-size: large;
+        
+        
+      }
+      .dropdownItem:hover{
+        color:#C51010
+      }
+
+      #optionA,#optionB,#optionC{
+        display:none;
+      }
+      
+    #GamePage{
+        width: 100%;
+        height: 1024px;
+         position: relative;
+          background: linear-gradient(0deg, #000235 0%, #000235 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+    }
