@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Trainer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <nav class="bg-gray-800 p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">
+            <a href="index.html" class="text-gray-100 hover:text-gray-400">Game</a>
+        </div>
+        <div class="space-x-4">
+            <a href="contact.html" class="text-gray-100 hover:text-gray-400">Contact</a>
+            <div class="relative inline-block">
+                <input type="checkbox" id="toggleCheckbox" class="hidden">
+                <label for="toggleCheckbox" class="bg-gray-700 text-gray-100 px-4 py-2 rounded cursor-pointer hover:bg-gray-600">Difficulty</label>
+                <div id="dropdownMenu" class="absolute right-0 mt-2 w-40 bg-gray-700 rounded shadow-lg hidden">
+                    <input type="radio" name="dropdownOptions" id="optionA" class="hidden">
+                    <label for="optionA" class="block px-4 py-2 hover:bg-gray-600 cursor-pointer">Easy</label>
+                    <input type="radio" name="dropdownOptions" id="optionB" class="hidden">
+                    <label for="optionB" class="block px-4 py-2 hover:bg-gray-600 cursor-pointer">Medium</label>
+                    <input type="radio" name="dropdownOptions" id="optionC" class="hidden">
+                    <label for="optionC" class="block px-4 py-2 hover:bg-gray-600 cursor-pointer">Hard</label>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="flex flex-col items-center justify-center min-h-screen">
+        <p id="score" class="text-xl font-semibold mb-4">Score: 0</p>
+        <p id="timer" class="text-xl font-semibold mb-4">Time Left: 10s</p>
+        <div id="game" class="relative w-full max-w-4xl h-96 bg-gray-800 border-4 border-gray-700 rounded-lg">
+            <button id="restart" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">Restart</button>
+            <div class="dot absolute bg-gray-500 w-2.5 h-2.5 rounded-full hidden"></div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

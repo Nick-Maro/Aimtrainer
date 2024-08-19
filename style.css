@@ -1,0 +1,9 @@
+/* style.css */
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+}
